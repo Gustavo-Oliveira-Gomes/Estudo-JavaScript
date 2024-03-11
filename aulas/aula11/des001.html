@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País</title>
+</head>
+<body>
+    <h1>Pais</h1>
+    <p>Qual e o seu nome: <input type="text" name="wnome" id="wnome"></p>
+    <p>Qual e o Pais: <input type="text" name="txtp" id="txtp"></p>
+   <input type="button" value="vereficar" onclick="teste()">
+   <div id="rest"></div>
+   <script>
+   
+    function teste()
+    { 
+
+        var textp = document.getElementById('txtp')
+        var rst = document.getElementById('rest')
+        var nome = document.getElementById('wnome')
+        var pais = textp.value.toLowerCase()
+        var nick = nome.value
+
+        rst.innerHTML = `Ola ${nick} você e`
+        if(pais == 'brasil'){
+            rst.innerHTML += ` Brasiliero!`
+        }
+        else{
+            rst.innerHTML += ` Estrangeiro!`
+        }
+    }
+   </script>
+</body>
+</html>
