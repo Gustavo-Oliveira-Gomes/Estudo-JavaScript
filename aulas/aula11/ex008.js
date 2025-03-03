@@ -1,4 +1,4 @@
-var val = 12
+var val = 80
 console.log(`A velocidade do seu carro e ${val} km/h`)
 if (val > 60) {//condição simples!
 
